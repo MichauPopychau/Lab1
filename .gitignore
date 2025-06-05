@@ -1,0 +1,15 @@
+# Pliki Pythona do ignorowania
+__pycache__/
+*.py[cod]
+*.pyo
+
+# Pliki edytora
+*.swp
+*.swo
+
+# Pliki systemowe
+.DS_Store
+Thumbs.db
+
+# Wirtualne środowisko
+venv/
