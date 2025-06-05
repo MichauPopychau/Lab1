@@ -2,7 +2,7 @@
 
 Prosty projekt napisany w Pythonie, który wypisuje komunikat „Hello world!” w konsoli.
 
-![Zrzut ekranu](screen.png)
+![Zrzut ekranu](screen.PNG)
 
 ## Funkcjonalności
 - Wypisuje „Hello world” na ekranie
