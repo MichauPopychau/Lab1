@@ -1,5 +1,7 @@
 print("=== Nagłówek C ===")
 
+def about():
+    print("Projekt do nauki Gita")
 
 def menu():
     print("Menu nawigacyjne:")
@@ -8,6 +10,7 @@ def menu():
     print("3. Wyjście")
 
 menu()
+about()
 
 print("Hello, world!")
 
