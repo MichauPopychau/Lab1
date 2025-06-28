@@ -1,4 +1,5 @@
-print("=== Nagłówek A ===")
+print("=== Nagłówek C ===")
+
 
 def menu():
     print("Menu nawigacyjne:")
