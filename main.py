@@ -1,3 +1,5 @@
+print("=== Nagłówek A ===")
+
 def menu():
     print("Menu nawigacyjne:")
     print("1. Strona główna")
