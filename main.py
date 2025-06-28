@@ -3,13 +3,13 @@ print("=== Nagłówek C ===")
 def about():
     print("Projekt do nauki Gita")
 
-def menu():
+def navigation_menu():
     print("Menu nawigacyjne:")
     print("1. Strona główna")
     print("2. O projekcie")
     print("3. Wyjście")
 
-menu()
+navigation_menu()
 about()
 
 print("Hello, world!")
