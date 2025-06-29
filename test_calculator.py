@@ -1,5 +1,5 @@
 import unittest
-from calculator import dodaj, odejmij
+from calculator import dodaj, odejmij, pomnoz
 
 class TestCalculator(unittest.TestCase):
     def test_dodaj(self):
@@ -15,3 +15,8 @@ class TestCalculator(unittest.TestCase):
     def test_dodaj_i_odejmij(self):
         result = odejmij(dodaj(10, 5), 3)
         self.assertEqual(result, 12)
+
+    def test_pomnoz(self):
+        self.assertEqual(pomnoz(2, 3), 6)
+        self.assertEqual(pomnoz(-1, 5), -5)
+        self.assertEqual(pomnoz(0, 9), 0)
