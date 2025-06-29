@@ -7,6 +7,10 @@ Prosty projekt napisany w Pythonie, który wypisuje komunikat „Hello world!”
 ## Funkcjonalności
 - Wypisuje „Hello world” na ekranie
 - Umożliwia naukę repozytorium Git
+- Dodawanie
+- Odejmowanie
+- Mnożenie
+
 
 ## Użycie
 py main.py
