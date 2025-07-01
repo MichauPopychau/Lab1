@@ -1,17 +1,14 @@
-print("=== Nagłówek C ===")
+from flask import Flask
+app = Flask(__name__)
 
-def about():
-    print("Projekt do nauki Gita")
+@app.route('/')
+def home():
+    return 'Hello world', 200
 
-def navigation_menu():
-    print("Menu nawigacyjne:")
-    print("1. Strona główna")
-    print("2. O projekcie")
-    print("3. Wyjście")
+@app.route('/health')
+def health():
+    return 'OK', 200
 
-navigation_menu()
-about()
 
-print("Hello, world!")
-
-print("How are you")
+if __name__ == '__main__':
+    app.run(host='0.0.0.0', port=8000)
