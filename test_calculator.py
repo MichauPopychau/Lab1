@@ -1,7 +1,9 @@
 import unittest
 from calculator import dodaj, odejmij, pomnoz
 
+
 class TestCalculator(unittest.TestCase):
+    
     def test_dodaj(self):
         self.assertEqual(dodaj(2, 3), 5)
         self.assertEqual(dodaj(-1, 1), 0)
