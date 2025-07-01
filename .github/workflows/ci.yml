@@ -1,0 +1,31 @@
+name: CI
+
+on:
+  push:
+    branches: [ main, 'feature/**' ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  tests-and-lint:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Ustaw Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+
+      - name: Instalacja zależności
+        run: pip install -r requirements.txt
+
+      - name: Uruchom testy
+        run: |
+          coverage run -m unittest discover
+          coverage report --fail-under=100
+
+      - name: Lint (flake8)
+        run: |
+          pip install flake8
+          flake8 .
