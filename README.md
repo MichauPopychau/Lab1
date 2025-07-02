@@ -18,14 +18,17 @@ Prosty projekt napisany w Pythonie, który wypisuje komunikat „Hello world!”
 
 ## Instalacja
 
+```bash
 git clone https://github.com/MichauPopychau/Lab1
 cd lab1-git
 pip install -r requirements.txt
-
+```
 
 ## Użycie lokalne
 
+```bash
 python main.py
+```
 
 Aplikacja uruchomi się na \`http://localhost:8000/\`.  
 Sprawdź health check: \`http://localhost:8000/health\`.
@@ -34,7 +37,9 @@ Sprawdź health check: \`http://localhost:8000/health\`.
 
 Uruchomienie testów jednostkowych:
 
+```bash
 python -m unittest discover
+```
 
 Sprawdzenie pokrycia kodu:
 
