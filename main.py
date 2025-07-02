@@ -5,8 +5,8 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Hello world', 200
-    print("Sekret:", os.environ.get("SECRET", "brak sekretu"))
+    secret = os.environ.get("SECRET", "brak sekretu")
+    return f'Hello world – Sekret: {secret}', 200
 
 
 @app.route('/health')
